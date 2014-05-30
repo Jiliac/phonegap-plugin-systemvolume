@@ -1,19 +1,21 @@
-Description
+## Description
 
 Plugin to set volume of the music stream.
 
-Supported Platforms
+## Supported Platforms
 
 Android
 
-Installation
+## Installation
 
 Adding the Plugin to your project:
-
+```bash
 phonegap local plugin add https://github.com/Jiliac/phonegap-plugin-systemvolume.git
+```
 
-Example
+## Example
 
+```bash
 //set the sound to maximum
 window.system.setSystemVolume(1.0);
-
+```
