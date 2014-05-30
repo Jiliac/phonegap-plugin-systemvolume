@@ -1,5 +1,8 @@
+var exec = require('cordova/exec');
+
 module.exports = {
-	setSystemVolume: function(volume) {
-		cordova.exec(null, null, "SytemVolume", "setSystemVolume", [volume]);
-	}
+
+    setSystemVolume: function(volume) {
+        exec(null, null, "SystemVolume", "setSystemVolume", [volume]);
+    },
 };
