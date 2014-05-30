@@ -32,7 +32,7 @@ public class SystemVolume extends CordovaPlugin {
 
 		AudioManager am = (AudioManager) this.cordova.getActivity().getSystemService(Context.AUDIO_SERVICE);
 		*/
-		/*
+		
 		am.setStreamVolume(
 			AudioManager.STREAM_MUSIC,
 			am.getStreamMaxVolume(AudioManager.STREAM_MUSIC),
@@ -41,12 +41,13 @@ public class SystemVolume extends CordovaPlugin {
 			AudioManager.STREAM_SYSTEM,
 			am.getStreamMaxVolume(AudioManager.STREAM_SYSTEM),
 			0);
-		*/
+		/*
 
         am.setStreamMute(AudioManager.STREAM_NOTIFICATION, true);
         am.setStreamMute(AudioManager.STREAM_ALARM, true);
         am.setStreamMute(AudioManager.STREAM_MUSIC, true);
         am.setStreamMute(AudioManager.STREAM_RING, true);
         am.setStreamMute(AudioManager.STREAM_SYSTEM, true);
+        */
 	}
 }
