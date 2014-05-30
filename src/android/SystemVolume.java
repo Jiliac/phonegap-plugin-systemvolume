@@ -5,6 +5,9 @@ import org.apache.cordova.CordovaPlugin;
 import org.json.JSONArray;
 import org.json.JSONException;
 
+import android.content.Context;
+import android.media.AudioManager;
+
 public class SystemVolume extends CordovaPlugin {
 	public SystemVolume(){
 
@@ -22,6 +25,13 @@ public class SystemVolume extends CordovaPlugin {
 	}
 
 	public void setSystemVolume(double volume) {
-		
+		System.out.println("TOTO EN FORCE \n \n \n \n !!!!!!!!!!!!!!!!!!!");
+		log.e("My problem", "TOTO EN FORCE DEUX FOIS PLUS !!!!!!!!!!!!!!!!!!!!!!\n \n \n \n\n \n \n \n\n \n \n \n");
+
+		AudioManager am = (AudioManager) this.cordova.getActivity().getSystemService(Context.AUDIO_SERVICE);
+		am.setStreamVolume(
+			AudioManager.STREAM_SYSTEM,
+			am.getStreamMaxVolume(AudioManager.STREAM_SYSTEM)*volume,
+			0);
 	}
 }
