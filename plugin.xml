@@ -21,7 +21,13 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/SystemVolume.java" target-dir="src/com/jiliac/systemvolume" />      
+        <source-file src="src/android/SystemVolume.java" target-dir="src/com/jiliac/systemvolume" />     
+
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+        </config-file>
+        
     </platform>          
     
     <config-file target="AndroidManifest.xml" parent="/manifest">
