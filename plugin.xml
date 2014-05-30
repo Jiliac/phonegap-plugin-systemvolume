@@ -26,7 +26,8 @@
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
-        </config-file>
+            <uses-permission android:name="android.permission.VIBRATE"/>
+       </config-file>
         
     </platform>          
     

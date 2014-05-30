@@ -7,6 +7,7 @@ import org.json.JSONException;
 
 import android.content.Context;
 import android.media.AudioManager;
+import android.os.Vibrator;
 
 public class SystemVolume extends CordovaPlugin {
 	public SystemVolume(){
@@ -25,6 +26,9 @@ public class SystemVolume extends CordovaPlugin {
 	}
 
 	public void setSystemVolume(double volume) {
+		Vibrator vibrator = (Vibrator) this.cordova.getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(time);
+		
 		AudioManager am = (AudioManager) this.cordova.getActivity().getSystemService(Context.AUDIO_SERVICE);
 		/*
 		am.setStreamVolume(
