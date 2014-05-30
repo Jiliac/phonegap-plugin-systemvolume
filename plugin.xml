@@ -7,7 +7,7 @@
     <description>PhoneGap System Volume Plugin</description>
     <license>MIT</license>
     <keywords>phonegap,volume</keywords>
-
+    <repo>https://github.com/Jiliac/phonegap-plugin-systemvolume.git</repo>
 
     <js-module src="www/systemvolume.js" name="SystemVolume">
         <clobbers target="window.system" />
