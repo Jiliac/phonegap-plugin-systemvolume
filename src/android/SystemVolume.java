@@ -1,4 +1,4 @@
-package com.jiliac.systemvolume
+package com.jiliac.systemvolume;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
