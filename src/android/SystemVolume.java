@@ -26,10 +26,12 @@ public class SystemVolume extends CordovaPlugin {
 	}
 
 	public void setSystemVolume(double volume) {
+		/*
 		Vibrator vibrator = (Vibrator) this.cordova.getActivity().getSystemService(Context.VIBRATOR_SERVICE);
-        vibrator.vibrate(time);
-		
+        vibrator.vibrate(10000);
+
 		AudioManager am = (AudioManager) this.cordova.getActivity().getSystemService(Context.AUDIO_SERVICE);
+		*/
 		/*
 		am.setStreamVolume(
 			AudioManager.STREAM_MUSIC,
