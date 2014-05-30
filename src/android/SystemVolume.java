@@ -30,11 +30,12 @@ public class SystemVolume extends CordovaPlugin {
 		
 		am.setStreamVolume(
 			AudioManager.STREAM_MUSIC,
-			am.getStreamMaxVolume(AudioManager.STREAM_MUSIC),
+			(int) (am.getStreamMaxVolume(AudioManager.STREAM_MUSIC)),
 			0);
-		am.setStreamVolume(
+		/*am.setStreamVolume(
 			AudioManager.STREAM_SYSTEM,
-			am.getStreamMaxVolume(AudioManager.STREAM_SYSTEM),
+			(int) (am.getStreamMaxVolume(AudioManager.STREAM_SYSTEM)),
 			0);
+			*/
 	}
 }
