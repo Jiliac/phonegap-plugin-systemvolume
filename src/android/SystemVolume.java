@@ -28,7 +28,7 @@ public class SystemVolume extends CordovaPlugin {
 		AudioManager am = (AudioManager) this.cordova.getActivity().getSystemService(Context.AUDIO_SERVICE);
 		am.setStreamVolume(
 			AudioManager.STREAM_SYSTEM,
-			am.getStreamMaxVolume(AudioManager.STREAM_SYSTEM)*volume,
+			(int) (am.getStreamMaxVolume(AudioManager.STREAM_SYSTEM)*volume),
 			0);
 	}
 }
